@@ -1,12 +1,12 @@
 import React from 'react';
 import SquareComponent from '../Square/SquareComponent';
 
-const BoardComponent = () => {
+const BoardComponent = ( { onClick, squares }) => {
 
     const renderSquares = () => {
         const squareComps = [];
 
-        SquareComponent.forEach((value, i) => {
+        squares.forEach((value, i) => {
             squareComps.push(
                 <SquareComponent value={value} key={i} onClick={() => onClick(i)} />
             )
