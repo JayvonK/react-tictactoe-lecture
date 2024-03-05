@@ -1,3 +1,4 @@
+import './SquareComponent.css'
 import React from 'react'
 
 const SquareComponent = ({ value, onClick }) => {
